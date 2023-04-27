@@ -29,7 +29,7 @@ jobs:
         branch: gh-pages
         folder: release/wwwroot
         
-    - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
+    - name: Change base-tag in index.html from / to blazor
       run: sed -i 's/<base href="\/" \/>/<base href="\/blazor/" \/>/g' release/wwwroot/index.html
       
             # отключаем jekyll
